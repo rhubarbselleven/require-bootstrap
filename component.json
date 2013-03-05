@@ -1,16 +1,17 @@
 {
-  "name": "require-bootstrap",
-  "version": "0.0.0",
-  "dependencies": {
-    "requirejs": "~2.1.4",
-    "modernizr": "~2.6.2",
-    "jquery": "~1.9.1",
-    "marionette": "~1.0.0-rc6",
-    "backbone.wreqr": "~0.1.1",
-    "backbone.babysitter": "~0.0.4",
-    "requirejs-tpl": "latest",
-    "underscore-amd": "~1.4.4",
-    "bootstrap.css": "~2.1.1"
-  },
-  "devDependencies": {}
+    "name": "require-bootstrap",
+    "version": "0.0.0",
+    "dependencies": {
+        "sass-bootstrap": "~2.3.0",
+        "requirejs": "~2.1.4",
+        "modernizr": "~2.6.2",
+        "jquery": "~1.9.1",
+        "backbone.wreqr": "~0.1.1",
+        "backbone.babysitter": "~0.0.4",
+        "underscore-amd": "~1.4.4",
+        "backbone": "~0.9.10",
+        "marionette": "~1.0.0-rc6",
+        "requirejs-tpl": "latest"
+    },
+    "devDependencies": {}
 }
