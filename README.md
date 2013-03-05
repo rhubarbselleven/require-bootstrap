@@ -28,7 +28,4 @@ From there you can:
 
 ## Current Caveats
 
-Although Twitter's bootstrap is installed as a dependency, currently it's relying on you to manhandle placing the CSS in the correct paths.
-
-Will figure this out soon.
-
+The sass-bootstrap dependency requires sass => 3.2
