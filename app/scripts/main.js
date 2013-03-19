@@ -1,7 +1,7 @@
 require.config({
     paths: {
         jquery: '../components/jquery/jquery',
-        bootstrap: 'vendor/bootstrap',
+        bootstrap: '../components/bootstrap.css/js/bootstrap',
         backbone: '../components/backbone/backbone',
         underscore: '../components/underscore-amd/underscore',
         marionette: '../components/marionette/lib/core/amd/backbone.marionette',
@@ -28,16 +28,9 @@ require.config({
     }
 });
 
-require(['app', 'jquery', 'underscore', 'backbone', 'marionette'], function (app, $, _, Backbone, Marionette) {
+// require bootstrap so that the js is included in build.
+require(['app', 'bootstrap'], function (app) {
     'use strict';
-    // use app here
-    console.log(app);
-    console.log('Running jQuery %s', $().jquery);
 
-    Backbone.history.start();
-
-    var myApp = new Marionette.Application();
-    console.log(myApp);
-
-
+    app.start();
 });
