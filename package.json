@@ -23,9 +23,15 @@
         "grunt-mocha": "~0.2.2",
         "grunt-open": "~0.2.0",
         "grunt-concurrent": "~0.1.0",
-        "matchdep": "~0.1.1"
+        "matchdep": "~0.1.1",
+        "mocha": ">=1.8.1",
+        "mocha-bamboo-reporter": "*"
     },
     "engines": {
         "node": ">=0.8.0"
+    },
+
+    "scripts": {
+        "bamboo": "node node_modules/mocha/bin/mocha -R mocha-bamboo-reporter > mocha.json"
     }
 }
