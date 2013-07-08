@@ -9,8 +9,6 @@ define([
             selected: false
         },
 
-        idAttribute: 'id',
-
         isSelected: function () {
             return this.get('selected');
         }

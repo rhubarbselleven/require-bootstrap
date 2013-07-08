@@ -7,7 +7,7 @@ define([
 ], function (Marionette, ModelView, template) {
     'use strict';
 
-    return Marionette.CollectionView.extend({
+    return Marionette.CompositeView.extend({
 
         template: template,
 
@@ -18,8 +18,9 @@ define([
 
         },
 
-        initialize: function (opts) {
-
+        initialize: function (model, collection) {
+            this.model = model;
+            this.collection = collection;
         },
 
         onRender: function () {

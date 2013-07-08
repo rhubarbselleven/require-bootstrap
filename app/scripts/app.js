@@ -1,10 +1,10 @@
 /*global define */
 define([
     'marionette',
-
+    'models/Collection',
     'models/Collection',
     'views/ModelListView'
-], function (Marionette, Collection, ModelListView) {
+], function (Marionette, Model, Collection, ModelListView) {
     'use strict';
 
     var app = new Marionette.Application();
@@ -24,9 +24,11 @@ define([
         ]
     );
 
+    var model = new Model({name: 'Collection Time!'});
+
     app.addInitializer(function () {
         // todo: add initialisers
-        app.hero.show(new ModelListView(collection));
+        app.hero.show(new ModelListView(model, collection));
     });
 
 
