@@ -29,7 +29,7 @@ define([
         it('Can be loaded', function () {
             var collection = new Collection(payload);
             expect(collection.size()).to.equal(payload.length);
-        })
+        });
     });
 
 

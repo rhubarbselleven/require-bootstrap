@@ -31,11 +31,5 @@ define([
         app.hero.show(new ModelListView(model, collection));
     });
 
-
-    app.on('initialize:after', function () {
-        Backbone.history.start();
-
-    });
-
     return app;
 });
