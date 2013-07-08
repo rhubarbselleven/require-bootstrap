@@ -52,7 +52,8 @@ module.exports = function (grunt) {
                             lrSnippet,
                             mountFolder(connect, '.tmp'),
                             mountFolder(connect, 'app'),
-                            mountFolder(connect, '.')
+                            mountFolder(connect, '.'),
+                            mountFolder(connect, 'test')
                         ];
                     }
                 }
@@ -102,7 +103,7 @@ module.exports = function (grunt) {
             all: {
                 options: {
                     run: false,
-                    reporter: 'Spec',
+                    reporter: 'spec',
                     urls: ['http://localhost:<%= connect.options.port %>/test/index.html']
                 }
             }

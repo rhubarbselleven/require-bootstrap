@@ -3,7 +3,8 @@ define([
 
 
     // All your tests go here.
-    'spec/test.app' // maybe it makes sense to add tests as dependencies in spec/config?
+    'spec/test.app', // maybe it makes sense to add tests as dependencies in spec/config?
+    'spec/test.collection'
 
 ], function () {
     'use strict';
