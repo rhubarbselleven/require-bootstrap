@@ -32,6 +32,7 @@
     },
 
     "scripts": {
-        "bamboo": "node node_modules/mocha/bin/mocha -R mocha-bamboo-reporter > mocha.json"
+        "bamboo": "node node_modules/mocha/bin/mocha -R mocha-bamboo-reporter > mocha.json",
+        "test": "grunt travis --verbose"
     }
 }
