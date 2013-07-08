@@ -2,6 +2,10 @@
 
 RequireJS, Backbone, Marionette bootstrap with Bower Grunt. Sourced from Yeoman, and then further adapted.
 
+## Travis Build Status
+
+[![Build Status](https://travis-ci.org/rhubarbselleven/require-bootstrap.png)](https://travis-ci.org/rhubarbselleven/require-bootstrap)
+
 ## Getting Started
 
 First things first, install nodejs.
