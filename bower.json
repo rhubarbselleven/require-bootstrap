@@ -1,0 +1,23 @@
+{
+    "name": "require-bootstrap",
+    "version": "0.0.0",
+    "dependencies": {
+        "sass-bootstrap": "~2.3.0",
+        "requirejs": "~2.1.4",
+        "modernizr": "~2.6.2",
+        "jquery": "~1.9.1",
+        "backbone.wreqr": "~0.2.0",
+        "backbone.babysitter": "~0.0.6",
+        "underscore-amd": "~1.4.4",
+        "backbone": "~1.0.0",
+        "marionette": "~1.0.3",
+        "requirejs-tpl": "latest",
+        "bootstrap.css": "~2.1.1",
+        "backbone.marionette": "~1.0.3"
+    },
+    "devDependencies": {
+        "mocha": "~1.11.0",
+        "chai-jquery": "~1.1.1",
+        "chai": "~1.7.0"
+    }
+}
