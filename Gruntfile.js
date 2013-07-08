@@ -34,6 +34,8 @@ module.exports = function (grunt) {
                     '<%= yeoman.app %>/*.html',
                     '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+                    '{.tmp,<%= yeoman.app %>}/scripts/templates/{,*/}*.html',
+                    '{.tmp,<%= yeoman.app %>}/test/spec/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,webp}'
                 ],
                 tasks: ['livereload']
@@ -52,8 +54,7 @@ module.exports = function (grunt) {
                             lrSnippet,
                             mountFolder(connect, '.tmp'),
                             mountFolder(connect, 'app'),
-                            mountFolder(connect, '.'),
-                            mountFolder(connect, 'test')
+                            mountFolder(connect, '.')
                         ];
                     }
                 }
