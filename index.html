@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Require-bootstrap : RequireJS, Backbone, Marionette bootstrap with Bower Grunt. Sourced from Yeoman, and then further adapted" />
+    <meta name="description" content="Require-bootstrap : RequireJS, Backbone, Marionette bootstrap with Bower, Grunt and Mocha. Sourced from Yeoman, and then further adapted to streamline JavaScript modular development." />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
@@ -19,7 +19,7 @@
           <a id="forkme_banner" href="https://github.com/rhubarbselleven/require-bootstrap">View on GitHub</a>
 
           <h1 id="project_title">Require-bootstrap</h1>
-          <h2 id="project_tagline">RequireJS, Backbone, Marionette bootstrap with Bower Grunt. Sourced from Yeoman, and then further adapted</h2>
+          <h2 id="project_tagline">RequireJS, Backbone, Marionette bootstrap with Bower, Grunt and Mocha. Sourced from Yeoman, and then further adapted to streamline JavaScript modular development.</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/rhubarbselleven/require-bootstrap/zipball/master">Download this project as a .zip file</a>
@@ -31,40 +31,113 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>Require Bootstrap</h1>
+        <h1>
+<a name="require-bootstrap" class="anchor" href="#require-bootstrap"><span class="octicon octicon-link"></span></a>Require Bootstrap</h1>
 
-<p>RequireJS, Backbone, Marionette bootstrap with Bower Grunt. Sourced from Yeoman, and then further adapted.</p>
+<p>RequireJS, Backbone, Marionette bootstrap with Bower, Grunt and Mocha. Sourced from Yeoman, and then further adapted to streamline JavaScript modular development.</p>
 
-<h2>Getting Started</h2>
+<h2>
+<a name="out-of-the-box" class="anchor" href="#out-of-the-box"><span class="octicon octicon-link"></span></a>Out of the box</h2>
 
-<p>First things first, install nodejs.</p>
+<h3>
+<a name="products" class="anchor" href="#products"><span class="octicon octicon-link"></span></a>Products</h3>
 
-<p>Then </p>
+<ul>
+<li><a href="http://requirejs.org">RequireJS</a></li>
+<li><a href="http://backbonejs.org">Backbone</a></li>
+<li><a href="http://marionettejs.com">Marionette</a></li>
+<li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
+<li><a href="http://gruntjs.com">Grunt</a></li>
+<li><a href="http://bower.io">Bower</a></li>
+<li><a href="http://visionmedia.github.io/mocha/">Mocha</a></li>
+</ul><h3>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h3>
 
-<pre><code>npm install -g grunt-cli bower
+<ul>
+<li>Buildable</li>
+<li>Live reload of edited files (JS, css and html templates)</li>
+<li>Testable</li>
+<li>
+<a href="http://travis-ci.org">Travis-ci</a> integration</li>
+<li>
+<a href="http://www.atlassian.com/software/bamboo/">Bamboo</a> integration</li>
+</ul><h2>
+<a name="travis-build-status" class="anchor" href="#travis-build-status"><span class="octicon octicon-link"></span></a>Travis Build Status</h2>
+
+<p><a href="https://travis-ci.org/rhubarbselleven/require-bootstrap"><img src="https://travis-ci.org/rhubarbselleven/require-bootstrap.png" alt="Build Status"></a></p>
+
+<h2>
+<a name="prerequisites" class="anchor" href="#prerequisites"><span class="octicon octicon-link"></span></a>Prerequisites</h2>
+
+<p>Before you begin, you'll need:</p>
+
+<ul>
+<li>Node =&gt; 0.8.0</li>
+<li>npm (for NodeJS magic)</li>
+<li>compass (for sass magic)</li>
+<li>bower (for dependency magic)</li>
+<li>grunt-cli (for building magic)</li>
+</ul><p>Install npm via your distribution's package manager.</p>
+
+<pre><code># Gentoo
+emerge npm
 </code></pre>
 
-<p>Which will install grunt and bower for you.</p>
+<p>Compass is installed as a RubyGem, so as a prerequisite, you need to install Ruby.</p>
 
-<h2>Build and Run</h2>
+<pre><code># install compass once you have ruby installed
+gem update --system
+gem install compass
+</code></pre>
 
-<p>Once checked out, cd into the top directory then:</p>
+<p>Grunt and bower need to be available in the global paths</p>
+
+<pre><code># install grunt and bower
+npm install -g grunt-cli bower
+</code></pre>
+
+<p>If you're using Ubuntu, see <a href="https://github.com/bower/bower/issues/201">this issue</a>. As there might be something else called node installed on your system.</p>
+
+<p>You now have the base prerequisites installed. To install the project related dependencies, execute the following from the require-bootstrap directory.</p>
 
 <pre><code>npm install &amp;&amp; bower install
 </code></pre>
 
-<p>This will download and install all of the project dependencies.</p>
+<p>This will take some time. Once completed, you're all set to go.</p>
 
-<p>From there you can:</p>
+<h2>
+<a name="building-and-running" class="anchor" href="#building-and-running"><span class="octicon octicon-link"></span></a>Building and Running</h2>
+
+<p>grunt and bower are now your new best friends. From your project directory, you can execute grunt in the following manner:</p>
 
 <pre><code>grunt           # build the application for deployment
 grunt test      # run tests
-grunt server    # preview the application
+grunt server    # preview the application in a live environment
 </code></pre>
 
-<h2>Current Caveats</h2>
+<p>There are a few caveats, eg you cannot test when you have the server running. However your tests are available under the test/ URL from the live environment.</p>
 
-<p>The sass-bootstrap dependency requires sass =&gt; 3.2</p>
+<p>Be sure to use bower to pull in all the different JavaScript libraries you're interested in.</p>
+
+<h2>
+<a name="where-to-from-here" class="anchor" href="#where-to-from-here"><span class="octicon octicon-link"></span></a>Where to from here</h2>
+
+<p>If you're new to Backbone, Marionette or RequireJS - be sure to check out their documentation. This bootstrap supplies you with some basic
+views to start with, but once you start using other libraries and creating new views you'll need their documentation to support you.</p>
+
+<h2>
+<a name="travis-ci-integration" class="anchor" href="#travis-ci-integration"><span class="octicon octicon-link"></span></a>Travis-ci Integration</h2>
+
+<p>The .travis.yml is all set up and ready to go, all you need to do is supply the repository.</p>
+
+<h2>
+<a name="atlassian-bamboo-integration" class="anchor" href="#atlassian-bamboo-integration"><span class="octicon octicon-link"></span></a>Atlassian Bamboo Integration</h2>
+
+<p>This bootstrap is all ready to go.</p>
+
+<p>You've got the <a href="https://github.com/issacg/mocha-bamboo">mocha bamboo reporter</a></p>
+
+<p>Just waiting on <a href="https://bitbucket.org/atlassian/bamboo-nodejs-plugin/issue/4/rebuild-request">this issue</a> for it to be a clean solution.</p>
       </section>
     </div>
 
