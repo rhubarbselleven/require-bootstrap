@@ -11,7 +11,7 @@ RequireJS, Backbone, Marionette bootstrap with Bower, Grunt and Mocha. Sourced f
 * [Bootstrap](http://twitter.github.com/bootstrap/)
 * [Grunt](http://gruntjs.com)
 * [Bower](http://bower.io)
-* [Mocha](http://visionmedia.github.io/mocha/)
+* [Mocha](http://mochajs.org/)
 
 ### Features
 * Buildable
